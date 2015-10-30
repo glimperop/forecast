@@ -5,8 +5,9 @@ RUN apt-get update \
 	&& apt-get install -y python \
 	&& rm -rf /var/lib/apt/lists/*
 
+RUN cd /home/pi/
 RUN git clone http://git.eclipse.org/gitroot/paho/org.eclipse.paho.mqtt.python.git
-RUN cd org.eclipse.paho.mqtt.python
+RUN cd /home/pi/org.eclipse.paho.mqtt.python
 RUN python setup.py install 
 
 
