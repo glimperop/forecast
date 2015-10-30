@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:jessie
+﻿FROM resin/rpi-raspbian:jessie
 # Install Python.
 RUN apt-get update \
 	&& apt-get install -y python \

@@ -13,7 +13,7 @@ apikey = 'c114129d5fd0df9c7e68761a8d66b6bd'
 lat = "38.14465"
 lon = "23.85891"
 
-broker = '94.70.239.217'
+broker = '127.0.0.1'
 broker_port = 1883
 root_topic = 'openhab/home/weather'
 delay = (10 * 60)
