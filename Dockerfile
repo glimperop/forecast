@@ -1,13 +1,14 @@
 FROM resin/rpi-raspbian:jessie
 # Install Python 
 RUN apt-get update \
+	&& apt-get install -y apt-utils \
 	&& apt-get install -y git \
 	&& apt-get install -y python \
 	&& rm -rf /var/lib/apt/lists/*
 
-RUN cd /home/pi/
+WORKDIR /home
 RUN git clone http://git.eclipse.org/gitroot/paho/org.eclipse.paho.mqtt.python.git
-RUN cd /home/pi/org.eclipse.paho.mqtt.python
+cd /home/org.eclipse.paho.mqtt.python
 RUN python setup.py install 
 
 
