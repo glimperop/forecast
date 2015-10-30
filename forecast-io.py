@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 # Jan-Piet Mens, February 2013
 
 import paho.mqtt.client as paho

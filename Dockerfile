@@ -6,7 +6,7 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 
 # copy current directory into /app
-COPY . /app
+COPY . /App
 
 # run python script when container lands on device
-CMD ["python", "/app/forecast-io.py"]
+CMD ["python", "/App/forecast-io.py"]
