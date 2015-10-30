@@ -5,6 +5,10 @@ RUN apt-get update \
 	# Remove package lists to free up space
 	&& rm -rf /var/lib/apt/lists/*
 
+RUN git clone http://git.eclipse.org/gitroot/paho/org.eclipse.paho.mqtt.python.git
+RUN cd /home/org.eclipse.paho.mqtt.python
+RUN python setup.py install 
+
 # copy current directory into /app
 COPY . /App
 
