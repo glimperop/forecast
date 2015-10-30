@@ -8,7 +8,7 @@ RUN apt-get update \
 
 WORKDIR /home
 RUN git clone http://git.eclipse.org/gitroot/paho/org.eclipse.paho.mqtt.python.git
-cd /home/org.eclipse.paho.mqtt.python
+WORKDIR /home/org.eclipse.paho.mqtt.python
 RUN python setup.py install 
 
 
