@@ -1,7 +1,7 @@
 FROM resin/rpi-raspbian:jessie
 # Install Python 
 RUN apt-get update \
-	&& apt-get install git
+	&& apt-get install -y git \
 	&& apt-get install -y python \
 	&& rm -rf /var/lib/apt/lists/*
 
